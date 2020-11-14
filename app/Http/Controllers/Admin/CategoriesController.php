@@ -74,9 +74,7 @@ class CategoriesController extends Controller
     public function store(CategoryRequest $request)
     {
         if($request->hasFile('icon')){
-            ini_set('post_max_size','7000');
-            ini_set('upload_max_filesize','7000');
-            $file =$request->file('icon');
+           $file =$request->file('icon');
 			$time = time();
 			$ext = $file->getClientOriginalExtension();
 			$fullname = $time . '.' . $ext;
@@ -86,20 +84,19 @@ class CategoriesController extends Controller
         }else{
             $image = '/img/no_image.png';
         }
-
         if($request->has('parent_id')){
             $parent_id  = $request->parent_id;
         }else{
             $parent_id  = NULL;
         }
+
          $category = $this->category->create([
                         'name_ar'=>$request->name_ar,
                         'name_en'=>$request->name_en,
                         'meta_tags'=>$request->meta_tags,
                         'parent_id'=>$parent_id,
-                        'icon'=>$image
                     ]);
-
+        $this->category->where('id',$category->id)->update(['icon'=>$image]);
         $agent = new Agent();
         $agent = $agent->platform().','.$agent->browser().$agent->version($agent->browser());
         $data = ['key'=>'dashboard_browse_create_category','text'=>'Brwose Create  New Category','browser'=>$agent];

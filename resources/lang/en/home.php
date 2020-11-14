@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-	
+
 	return [
 		'message_success'=>'operation accomplished successfully',
 		'home'=>'Home',
@@ -132,7 +132,8 @@
 		'blogs'=>'Blogs',
 		'blog_list'=>'Blog List',
 		'create_new'=>'create New',
-		'key_search_blogs_list'=>'search key, title, content'
+		'key_search_blogs_list'=>'search key, title, content',
+        'empty_list'=>'Empty List',
 
 
 
@@ -143,4 +144,5 @@
 
 
 
-	];
+
+    ];

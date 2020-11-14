@@ -63,10 +63,10 @@
                     <th class="col-md-2">@lang('home.images')</th>
                     <th class="col-md-2">@lang('home.edit')</th>
                     <th class="col-md-2">@lang('home.delete')</th>
-
                 </tr>
                 </thead>
                 <tbody>
+                @if($products->count() > 0)
                 @foreach($products as $product)
                 <tr>
                     <td><span class="text-semibold">{{ @$product->id }}</span></td>
@@ -82,6 +82,9 @@
                     <td>@include('dashboard.products.delete_from_list')</td>
                 </tr>
                 @endforeach
+                @else
+                <th colspan="8" class="text-center"> @lang('home.empty_list') </th>
+                @endif
                 </tbody>
             </table>
             <!--  -->

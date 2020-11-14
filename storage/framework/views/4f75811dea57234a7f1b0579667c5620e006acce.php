@@ -62,10 +62,10 @@
                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.images'); ?></th>
                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.edit'); ?></th>
                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.delete'); ?></th>
-
                 </tr>
                 </thead>
                 <tbody>
+                <?php if($products->count() > 0): ?>
                 <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr>
                     <td><span class="text-semibold"><?php echo e(@$product->id); ?></span></td>
@@ -81,6 +81,9 @@
                     <td><?php echo $__env->make('dashboard.products.delete_from_list', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></td>
                 </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php else: ?>
+                <th colspan="8" class="text-center"> <?php echo app('translator')->getFromJson('home.empty_list'); ?> </th>
+                <?php endif; ?>
                 </tbody>
             </table>
             <!--  -->
