@@ -42,6 +42,9 @@ Route::group(
                 Route::get('categories/{id}/delete','Admin\CategoriesController@destroy');
                 Route::get('categories_export','Admin\CategoriesController@ExportExelSheet');
 
+                Route::resource('products','Admin\ProductsController');
+                Route::get('products/{id}/delete','Admin\ProductsController@destroy');
+
             });
 
 

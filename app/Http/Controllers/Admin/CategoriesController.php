@@ -23,11 +23,11 @@ use DB;
 class CategoriesController extends Controller
 {
     public $view = 'dashboard';
-    
+
     public function __construct(Category $category)
 	{
         $this->category = $category;
-	}	    
+	}
 
 
     public function ExportExelSheet(Request $request)
@@ -54,7 +54,7 @@ class CategoriesController extends Controller
         $agent = $agent->platform().','.$agent->browser().$agent->version($agent->browser());
         $data = ['key'=>'dashboard_browse_categories','text'=>'Brwose view Category list','browser'=>$agent];
         DoFire::MK_REPORT($data,Auth::id(),$categories,$request->ipinfo);
-		return view($this->view.'.categories.index',compact('categories'));		
+		return view($this->view.'.categories.index',compact('categories'));
 
     }
 
@@ -68,13 +68,15 @@ class CategoriesController extends Controller
         $data = ['key'=>'dashboard_browse_view_create_category','text'=>'Brwose view New Category','browser'=>$agent];
         DoFire::MK_REPORT($data,Auth::id(),null,$request->ipinfo);
 
-		return view($this->view.'.categories.create',compact('categories'));		
+		return view($this->view.'.categories.create',compact('categories'));
     }
 
     public function store(CategoryRequest $request)
     {
         if($request->hasFile('icon')){
-            $file =$request->file('icon'); 
+            ini_set('post_max_size','7000');
+            ini_set('upload_max_filesize','7000');
+            $file =$request->file('icon');
 			$time = time();
 			$ext = $file->getClientOriginalExtension();
 			$fullname = $time . '.' . $ext;
@@ -88,7 +90,7 @@ class CategoriesController extends Controller
         if($request->has('parent_id')){
             $parent_id  = $request->parent_id;
         }else{
-            $parent_id  = NULL;  
+            $parent_id  = NULL;
         }
          $category = $this->category->create([
                         'name_ar'=>$request->name_ar,
@@ -116,13 +118,15 @@ class CategoriesController extends Controller
         $data = ['key'=>'dashboard_browse_view_edit_category','text'=>'Brwose view edit Category','browser'=>$agent];
         DoFire::MK_REPORT($data,Auth::id(),null,$request->ipinfo);
 
-		return view($this->view.'.categories.edit',compact('categories','info'));		
+		return view($this->view.'.categories.edit',compact('categories','info'));
     }
 
     public function update(CategoryRequest $request,$id)
     {
         if($request->hasFile('icon')){
-            $file =$request->file('icon'); 
+            ini_set('post_max_size','7000');
+            ini_set('upload_max_filesize','7000');
+            $file =$request->file('icon');
 			$time = time();
 			$ext = $file->getClientOriginalExtension();
 			$fullname = $time . '.' . $ext;
@@ -137,7 +141,7 @@ class CategoriesController extends Controller
         if($request->has('parent_id')){
             $parent_id  = $request->parent_id;
         }else{
-            $parent_id  = NULL;  
+            $parent_id  = NULL;
         }
          $category = $this->category->find($id)->update([
                         'name_ar'=>$request->name_ar,

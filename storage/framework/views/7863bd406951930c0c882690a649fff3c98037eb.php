@@ -19,6 +19,8 @@
     <link href="<?php echo e(asset('/')); ?>assets/css/core.css" rel="stylesheet" type="text/css">
     <link href="<?php echo e(asset('/')); ?>assets/css/components.css" rel="stylesheet" type="text/css">
     <link href="<?php echo e(asset('/')); ?>assets/css/colors.css" rel="stylesheet" type="text/css">
+
+
     <!-- /global stylesheets -->
 
    	<!-- Core JS files -->
@@ -29,6 +31,8 @@
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
+
+
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/forms/tags/tagsinput.min.js"></script>
     <script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/tables/datatables/datatables.min.js"></script>
 
@@ -37,7 +41,6 @@
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/forms/styling/switchery.min.js"></script>
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/forms/styling/uniform.min.js"></script>
-      <script src="https://cdn.ckeditor.com/4.12.1/standard-all/ckeditor.js"></script>
 
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/ui/moment/moment.min.js"></script>
@@ -49,8 +52,10 @@
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script>
 
     <script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/core/app.js"></script>
+    <script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/pages/editor_ckeditor.js"></script>
 
-	
+    
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/pages/datatables_basic.js"></script>
 	<script type="text/javascript" src="<?php echo e(asset('/')); ?>assets/js/pages/form_tags_input.js"></script>
 
@@ -416,6 +421,13 @@
 									<ul class="hidden-ul" style="display: none;">
                                         <li><a href="<?php echo e(URL::to('ar/admin/categories')); ?>" class=""><?php echo app('translator')->getFromJson('home.categories_list'); ?></a></li>
                                         <li><a href="<?php echo e(URL::to('ar/admin/categories/create')); ?>" class=""><?php echo app('translator')->getFromJson('home.create_categories'); ?></a></li>
+									</ul>
+                            </li>
+                            <li class="">
+									<a href="#" class="has-ul "><i class="icon-archive"></i> <span><?php echo app('translator')->getFromJson('home.products'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
+									<ul class="hidden-ul" style="display: none;">
+                                        <li><a href="<?php echo e(URL::to('ar/admin/products')); ?>" class=""><?php echo app('translator')->getFromJson('home.products_list'); ?></a></li>
+                                        <li><a href="<?php echo e(URL::to('ar/admin/products/create')); ?>" class=""><?php echo app('translator')->getFromJson('home.create_products'); ?></a></li>
 									</ul>
                             </li>
 

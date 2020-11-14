@@ -10,6 +10,8 @@ class ImagesController extends Controller
 {
     public static function uploadSingle($file,$path,$db_path)
     {
+        ini_set('post_max_size','7000');
+        ini_set('upload_max_filesize','7000');
 
         if (isset($file)) {
 
@@ -24,6 +26,8 @@ class ImagesController extends Controller
 
     public static function upload_multiple($request_files, $path)
     {
+        ini_set('post_max_size','7000');
+        ini_set('upload_max_filesize','7000');
         $counter = 1;
         $images = array();
         foreach ($request_files as $file) {

@@ -18,6 +18,13 @@ $(function() {
     });
 
 
+    CKEDITOR.replace( 'editor-full-copy', {
+        height: '400px',
+        extraPlugins: 'forms'
+    });
+
+
+
 
     // Readonly editor
     // ------------------------------
@@ -92,5 +99,5 @@ $(function() {
 
     // Attach editor to the area
     var editor3 = CKEDITOR.inline('editor-inline');
-    
+
 });

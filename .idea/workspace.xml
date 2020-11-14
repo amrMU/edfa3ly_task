@@ -156,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/products" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,6 +168,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amrmu\code\l-cart\resources\views\dashboard\products" />
+      <recent name="C:\Users\amrmu\code\l-cart\resources\views\dashboard" />
       <recent name="C:\Users\amrmu\code\l-cart\resources\views\front" />
     </key>
   </component>
@@ -187,7 +189,7 @@
       <updated>1605186242391</updated>
       <workItem from="1605186243758" duration="1347000" />
       <workItem from="1605294407004" duration="42000" />
-      <workItem from="1605356897677" duration="4367000" />
+      <workItem from="1605356897677" duration="21530000" />
     </task>
     <servers />
   </component>
@@ -195,6 +197,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605365897939">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1605365897939" />
     <state x="463" y="111" key="FileChooserDialogImpl" timestamp="1605294439397">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -203,5 +209,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605360911944" />
+    <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605389492029">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1605389492029" />
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1605389616025">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1605389616025" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1605388914487">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1605388914487" />
   </component>
 </project>
