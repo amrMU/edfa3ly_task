@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="" />
+    <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/ProductRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/1605427692.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/3210855388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/4816283082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/c8afa9a889cb5c3e8632ec80e104f06974d65e61.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/BlogRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/PageRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9cdf4f280c1ec3ca16bde36d1d507ed809657f33.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9cdf4f280c1ec3ca16bde36d1d507ed809657f33.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c77aa0c8107670b34f71070125b7d541e6e9b13d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c77aa0c8107670b34f71070125b7d541e6e9b13d.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +78,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -189,12 +260,24 @@
       <updated>1605186242391</updated>
       <workItem from="1605186243758" duration="1347000" />
       <workItem from="1605294407004" duration="42000" />
-      <workItem from="1605356897677" duration="22808000" />
+      <workItem from="1605356897677" duration="23225000" />
+      <workItem from="1605425427836" duration="3814000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605365897939">

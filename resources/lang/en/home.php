@@ -134,15 +134,14 @@
 		'create_new'=>'create New',
 		'key_search_blogs_list'=>'search key, title, content',
         'empty_list'=>'Empty List',
-
-
-
-
-
-
-
-
-
+        'products'=>'Products',
+        'products_list'=>'Products List',
+        'create_products'=>'Create New Product',
+        'category'=>'Category',
+        'prices'=>'Prices',
+        'images'=>'Images',
+        'egp_price'=>'Egp Price',
+        'usd_price'=>'USD Price'
 
 
     ];

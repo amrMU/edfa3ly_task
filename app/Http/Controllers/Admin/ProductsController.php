@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Category;
 use App\Http\Controllers\ImagesController;
+use App\Http\Requests\Admin\ProductRequest;
 use App\Product;
 use App\ProductImages;
 use App\ProductPrice;
@@ -44,7 +45,7 @@ class ProductsController extends Controller
         return view($this->view.'create',$this->data);
     }
 
-    public function store(Request $request){
+    public function store(ProductRequest $request){
         $create = $this->model->create($request->except('_token','usd_price','egp_price','files'));
         $files = ImagesController::upload_multiple($request->images,'uploads/images/products');
         foreach ($files as $file){
@@ -79,7 +80,7 @@ class ProductsController extends Controller
         return view($this->view.'edit',$this->data);
     }
 
-    public function update(Request $request,$id){
+    public function update(ProductRequest $request,$id){
         $product = $this->model->find($id);
         $update = $this->model->find($id)->update($request->except('_token','usd_price','egp_price','files'));
        if($request->hasFile('images')){

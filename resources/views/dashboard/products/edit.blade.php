@@ -44,7 +44,6 @@
                 <!-- Form validation -->
                     <div class="panel panel-flat col-md-10">
                         <div class="panel-heading">
-                            <h5 class="panel-title">@lang('home.create_users')</h5>
                             <div class="heading-elements">
                                 <ul class="icons-list">
                                     <li><a data-action="collapse"></a></li>
@@ -73,7 +72,7 @@
                                 @endif
                                 {{-- general Info --}}
                                 <fieldset class="content-group">
-                                    <legend class="text-bold">@lang('home.edit_product')</legend>
+                                    <legend class="text-bold">@lang('home.update_info')</legend>
                                     <!-- choose category input -->
                                     <div class="form-group" id="">
                                         <label class="control-label col-lg-3">@lang('home.main_categories') <span class="text-danger" title="@lang('home.required')">*</span></label>

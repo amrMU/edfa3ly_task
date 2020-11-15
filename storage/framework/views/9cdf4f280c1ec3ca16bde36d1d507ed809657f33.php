@@ -43,7 +43,6 @@
                 <!-- Form validation -->
                     <div class="panel panel-flat col-md-10">
                         <div class="panel-heading">
-                            <h5 class="panel-title"><?php echo app('translator')->getFromJson('home.create_users'); ?></h5>
                             <div class="heading-elements">
                                 <ul class="icons-list">
                                     <li><a data-action="collapse"></a></li>
@@ -74,7 +73,7 @@
                                 <?php endif; ?>
                                 
                                 <fieldset class="content-group">
-                                    <legend class="text-bold"><?php echo app('translator')->getFromJson('home.edit_product'); ?></legend>
+                                    <legend class="text-bold"><?php echo app('translator')->getFromJson('home.update_info'); ?></legend>
                                     <!-- choose category input -->
                                     <div class="form-group" id="">
                                         <label class="control-label col-lg-3"><?php echo app('translator')->getFromJson('home.main_categories'); ?> <span class="text-danger" title="<?php echo app('translator')->getFromJson('home.required'); ?>">*</span></label>
@@ -183,7 +182,6 @@
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </div>
                         </div>
-
 
                     </div>
 

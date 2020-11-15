@@ -74,7 +74,7 @@
                                 <?php endif; ?>
                                 
                                 <fieldset class="content-group">
-                                    <legend class="text-bold"><?php echo app('translator')->getFromJson('home.add_new_product'); ?></legend>
+                                    <legend class="text-bold"><?php echo app('translator')->getFromJson('home.create_products'); ?></legend>
                                     <!-- choose category input -->
                                     <div class="form-group" id="">
                                         <label class="control-label col-lg-3"><?php echo app('translator')->getFromJson('home.main_categories'); ?> <span class="text-danger" title="<?php echo app('translator')->getFromJson('home.required'); ?>">*</span></label>

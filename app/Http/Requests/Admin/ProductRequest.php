@@ -4,7 +4,7 @@ namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BlogRequest extends FormRequest
+class ProductRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,32 +23,38 @@ class BlogRequest extends FormRequest
      */
     public function rules()
     {
+
         switch ($this->method()) {
             case 'GET':
             case 'DELETE':
-                {
-                 return array();
+            {
+                return array();
             }
             case 'POST':
             {
+
                 return [
-                    'title_ar'=>'required',
-                    'title_en'=>'required',
-                    'content_ar'=>'required',
+                    'name_ar'=>'required',
+                    'name_en'=>'required',
                     'content_en'=>'required',
-                    'url'=>'required',
-                    'image'=>'required|mimes:jpeg,bmp,png,jpg'
+                    'content_ar'=>'required',
+                    'egp_price'=>'required|numeric',
+                    'usd_price'=>'required|numeric',
+                    'images.*'=>'required|mimes:jpeg,bmp,png,jpg',
+
                 ];
             }
             case 'PUT':
             {
                 return [
-                    'title_ar'=>'required',
-                    'title_en'=>'required',
-                    'content_ar'=>'required',
+                    'name_ar'=>'required',
+                    'name_en'=>'required',
                     'content_en'=>'required',
-                    'url'=>'required',
-                    'image'=>'mimes:jpeg,bmp,png,jpg'
+                    'content_ar'=>'required',
+                    'egp_price'=>'required|numeric',
+                    'usd_price'=>'required|numeric',
+                    'images.*'=>'mimes:jpeg,bmp,png,jpg',
+
                 ];
             }
             case 'PATCH':
