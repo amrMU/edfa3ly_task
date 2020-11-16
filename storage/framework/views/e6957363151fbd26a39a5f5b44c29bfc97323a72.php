@@ -30,7 +30,7 @@
                         <div class="form-group has-feedback has-feedback-left">
                             <label class="control-label col-lg-3"><?php echo app('translator')->getFromJson('home.quantity'); ?> <span class="text-danger" title="<?php echo app('translator')->getFromJson('home.required'); ?>"> *</span></label>
                             <div class="col-lg-9">
-                                <input type="number" name="quantity" id="quantity" class="form-control input-xlg" placeholder="1" value="<?php echo e(Request::old('quantity')); ?>" min="1">
+                                <input type="number" name="quantity" id="quantity" class="form-control input-xlg" placeholder="1" value="<?php echo e(Request::old('quantity')); ?>" min="1" required>
                                 <div class="form-control-feedback">
                                     <i class="icon-cart"></i>
                                 </div>

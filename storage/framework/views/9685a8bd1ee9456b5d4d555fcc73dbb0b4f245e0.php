@@ -409,23 +409,17 @@
                         <ul class="navigation navigation-main navigation-accordion">
                             <li class="active "><a href="<?php echo e(URL::to('/?cur=usd')); ?>"><i class="icon-home4"></i> <span><?php echo app('translator')->getFromJson('home.home'); ?></span></a></li>
                             <li class="">
-									<a href="#" class="has-ul "><i class="icon-archive"></i> <span><?php echo app('translator')->getFromJson('home.categories'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
+									<a href="#" class="has-ul "><i class="icon-store"></i> <span><?php echo app('translator')->getFromJson('home.categories'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
 									<ul class="hidden-ul" style="display: none;">
                                         <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <li><a href="<?php echo e(URL::to('/categories/{id}?cur=usd')); ?>" class=""><?php echo e(@$category->$name); ?></a></li>
+                                        <li><a href="<?php echo e(url(LaravelLocalization::getCurrentLocale()).'/category/'.str_replace(' ','_',$category->name_en).'/'.$category->id.'?cur='.\App\Helpers\DoFire::getCurrentCurrency()); ?>" class=""><?php echo e(@$category->$name); ?></a></li>
                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
 									</ul>
                             </li>
 
-                            <li class="">
-                                <a href="#" class="has-ul "><i class="icon-archive"></i> <span><?php echo app('translator')->getFromJson('home.currencies'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
-                                <ul class="hidden-ul" style="display: none;">
-                                    <li><a href="<?php echo e(URL::to('/egp')); ?>" class=""><?php echo app('translator')->getFromJson('home.egp'); ?></a></li>
-                                    <li><a href="<?php echo e(URL::to('ar/usd')); ?>" class=""><?php echo app('translator')->getFromJson('home.usd'); ?></a></li>
-                                </ul>
-                            </li>
+                            <li class=" "><a href="<?php echo e(url(LaravelLocalization::getCurrentLocale().'/i/orders')); ?>"><i class="icon-list-ordered"></i> <span><?php echo app('translator')->getFromJson('home.orders_list'); ?></span></a></li>
 
+                           
 
                         </ul>
                     </div>

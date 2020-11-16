@@ -17,6 +17,8 @@ class CreateCartsTable extends Migration
             $table->increments('id');
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
+            $table->string('total_price')->nullable();
+            $table->string('currency')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->enum('status',['none','pending','in_progress','accept','deliverd']);

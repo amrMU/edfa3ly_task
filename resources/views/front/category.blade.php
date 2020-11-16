@@ -62,13 +62,10 @@
                     <div class="panel panel-flat">
                         <div class="panel-heading">
                             <h6 class="panel-title">@lang('home.products_list')</h6>
-                            <div class="heading-elements">
-                            </div>
+                            <div class="heading-elements"></div>
                         </div>
                         <!-- table reports -->
-
                         <div class="table-responsive">
-
                             <table class="table text-nowrap">
                                 <thead>
                                 <tr>

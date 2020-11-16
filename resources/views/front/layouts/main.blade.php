@@ -409,22 +409,16 @@
                         <ul class="navigation navigation-main navigation-accordion">
                             <li class="active "><a href="{{ URL::to('/?cur=usd') }}"><i class="icon-home4"></i> <span>@lang('home.home')</span></a></li>
                             <li class="">
-									<a href="#" class="has-ul "><i class="icon-archive"></i> <span>@lang('home.categories')</span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
+									<a href="#" class="has-ul "><i class="icon-store"></i> <span>@lang('home.categories')</span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
 									<ul class="hidden-ul" style="display: none;">
                                         @foreach($categories as $category)
-                                        <li><a href="{{ URL::to('/categories/{id}?cur=usd') }}" class="">{{@$category->$name}}</a></li>
+                                        <li><a href="{{url(LaravelLocalization::getCurrentLocale()).'/category/'.str_replace(' ','_',$category->name_en).'/'.$category->id.'?cur='.\App\Helpers\DoFire::getCurrentCurrency()}}" class="">{{@$category->$name}}</a></li>
                                         @endforeach
-{{--                                        <li><a href="{{ URL::to('ar/admin/categories/create') }}" class="">@lang('home.create_categories')</a></li>--}}
 									</ul>
                             </li>
 
-                            <li class="">
-                                <a href="#" class="has-ul "><i class="icon-archive"></i> <span>@lang('home.currencies')</span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
-                                <ul class="hidden-ul" style="display: none;">
-                                    <li><a href="{{ URL::to('/egp') }}" class="">@lang('home.egp')</a></li>
-                                    <li><a href="{{ URL::to('ar/usd') }}" class="">@lang('home.usd')</a></li>
-                                </ul>
-                            </li>
+                            <li class=" "><a href="{{url(LaravelLocalization::getCurrentLocale().'/i/orders')}}"><i class="icon-list-ordered"></i> <span>@lang('home.orders_list')</span></a></li>
+
 
 
                         </ul>

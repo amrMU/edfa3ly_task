@@ -18,4 +18,8 @@ class CartItems extends Model
         'price',
         'currency',
     ];
+
+    public function product(){
+        return $this->belongsTo(Product::class);
+    }
 }

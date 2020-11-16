@@ -164,7 +164,16 @@
         'similar_products'=>'Similar Products',
         'get_offer'=>'Get Offer',
         'quantity'=>'Quantity',
-        'product_added_to_cart_successfully'=>'Product Added To Cart Successfully'
+        'product_added_to_cart_successfully'=>'Product Added To Cart Successfully',
+        'in_offer'=>'In Offer',
+        'items'=>'Items',
+        'total_price'=>'Total Price',
+        'orders_list'=>'Orders List',
+        'none'=>'in_cart',
+        'pending'=>'pending',
+        'in_progress'=>'On the way to you',
+        'accept'=>'Accept',
+        'deliverd'=>'Delivered',
 
 
 

@@ -13,6 +13,12 @@ use function Matrix\trace;
 
 class CartController extends Controller
 {
+
+    public function CartList(){
+        $this->data['orders']  = Cart::where('user_id',Auth::id())->get();
+        return view('front.orders.index',$this->data);
+    }
+
    public function addCartForm(Request $request ,$product_id ){
        $product  = Product::find($product_id);
        $cart = $this->createCartIfNotExist();
@@ -29,13 +35,18 @@ class CartController extends Controller
                 'status'=>'none',
             ]);
         }
-
         return $cart;
    }
 
    public function AddItemToCart($request,$product,$cart)
    {
        $offer = $this->productInOffer($product);
+       if($offer['offers_type'] == 'percent'){
+           $price_discount = $product->price * $product->percent / 100 ;
+           $price = $product->price - $price_discount;
+       }else{
+           $price = $product->price;
+       }
 
        $item = CartItems::create([
            'product_id'=>$product->id,
@@ -45,8 +56,15 @@ class CartController extends Controller
            'paid_pieces' => $offer['paid_pieces'],
            'free_pieces' => $offer['free_pieces'],
            'percent' => $offer['percent'],
-
+           'price' => $product->price,
+           'currency' => $product->currency,
        ]);
+       $total = $cart->total_price + $price * $request['quantity'];
+//       dd($total);
+       $cart->update([
+           'total_price'=>$cart->total_price + $price * $request['quantity'] ,
+           'currency'=>$product->currency
+           ]);
        return $item;
    }
 
@@ -57,6 +75,5 @@ class CartController extends Controller
            'free_pieces' => $product->free_pieces,
            'percent' => $product->percent,
        ];
-
     }
 }

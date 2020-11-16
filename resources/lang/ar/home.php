@@ -168,6 +168,17 @@
         'get_offer'=>'احصل علي العرض',
         'quantity'=>'الكمية',
         'product_added_to_cart_successfully'=>'تمت إضافة المنتج إلى عربة التسوق بنجاح',
+        'in_offer'=>'في العرض',
+        'items'=>'العناصر',
+        'total_price'=>'اجمالي السعر',
+        'orders_list'=>'قائمة الطلبات',
+        'none'=>'في السلة',
+        'pending'=>'معلق',
+        'in_progress'=>'في الطريق اليك',
+        'accept'=>'تم القبول',
+        'deliverd'=>'تم التسليم',
+
+
 
 
 

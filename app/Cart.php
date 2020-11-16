@@ -12,5 +12,11 @@ class Cart extends Model
         'phone',
         'user_id',
         'status',
+        'total_price',
+        'currency',
     ];
+
+    public function items(){
+        return $this->hasMany(CartItems::class);
+    }
 }

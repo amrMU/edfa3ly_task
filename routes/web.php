@@ -57,6 +57,7 @@ Route::group(
         Route::get('/category/{category_name}/{category_id}','Front\CategoryController@index');
         Route::get('/product/{product_name}/{product_id}','Front\ProductController@show');
         Route::group(['middleware' => 'auth'], function () {
+            Route::get('i/orders','Front\CartController@CartList');
             Route::post('/add/cart/{product_id}','Front\CartController@addCartForm');
         });
     });
