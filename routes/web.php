@@ -57,3 +57,5 @@ Route::group(
 Auth::routes();
 //Route::get('/','Auth\LoginController@showLoginForm');
 Route::get('/','Front\HomeController@index');
+Route::get('/category/{category_name}/{category_id}','Front\CategoryController@index');
+Route::get('/product/{product_name}/{product_id}','Front\ProductController@show');

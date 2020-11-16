@@ -82,9 +82,9 @@
 <div class="navbar navbar-inverse bg-indigo">
     <div class="navbar-header">
         @if(isset($setting))
-        <a class="navbar-brand" href="{{URL::to('ar/admin/home')}}"><img src="{{url('/').@$setting->logo}}"  class="img-responsive"></a>
+        <a class="navbar-brand" href="{{URL::to('/?cur=usd')}}"><img src="{{url('/').@$setting->logo}}"  class="img-responsive"></a>
         @else
-        <a class="navbar-brand" href="{{URL::to('ar/admin/home')}}"><img src="{{ asset('/') }}assets/images/logo_light.png" class="img-responsive"></a>
+        <a class="navbar-brand" href="{{URL::to('/?cur=usd')}}"><img src="{{ asset('/') }}assets/images/logo_light.png" class="img-responsive"></a>
 
         @endif
         <ul class="nav navbar-nav visible-xs-block">
@@ -396,10 +396,7 @@
 
                     <div class="navigation-wrapper collapse" id="user-nav">
                         <ul class="navigation">
-                            <!-- <li><a href="#"><i class="icon-user-plus"></i> <span>@lang('home.profile_setting')</span></a></li> -->
-                            <!-- <li class="divider"></li> -->
-                            <li><a href="{{ URL::to('ar/admin/setting') }}"><i class="icon-cog5"></i> <span>@lang('home.general_settings')</span></a></li>
-                            <li><a href="{{ URL::to('/logout') }}"><i class="icon-switch2"></i> <span>@lang('home.logout')</span></a></li>
+                        <li><a href="{{ URL::to('/logout') }}"><i class="icon-switch2"></i> <span>@lang('home.logout')</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -410,12 +407,14 @@
                 <div class="sidebar-category sidebar-category-visible">
                     <div class="category-content no-padding">
                         <ul class="navigation navigation-main navigation-accordion">
-                            <li class="active "><a href="{{ URL::to('ar/admin/home') }}"><i class="icon-home4"></i> <span>@lang('home.home')</span></a></li>
+                            <li class="active "><a href="{{ URL::to('/?cur=usd') }}"><i class="icon-home4"></i> <span>@lang('home.home')</span></a></li>
                             <li class="">
 									<a href="#" class="has-ul "><i class="icon-archive"></i> <span>@lang('home.categories')</span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
 									<ul class="hidden-ul" style="display: none;">
-                                        <li><a href="{{ URL::to('ar/admin/categories') }}" class="">@lang('home.categories_list')</a></li>
-                                        <li><a href="{{ URL::to('ar/admin/categories/create') }}" class="">@lang('home.create_categories')</a></li>
+                                        @foreach($categories as $category)
+                                        <li><a href="{{ URL::to('/categories/{id}?cur=usd') }}" class="">{{@$category->$name}}</a></li>
+                                        @endforeach
+{{--                                        <li><a href="{{ URL::to('ar/admin/categories/create') }}" class="">@lang('home.create_categories')</a></li>--}}
 									</ul>
                             </li>
 

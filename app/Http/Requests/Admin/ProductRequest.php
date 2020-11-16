@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class ProductRequest extends FormRequest
 {
@@ -40,6 +41,7 @@ class ProductRequest extends FormRequest
                     'content_ar'=>'required',
                     'egp_price'=>'required|numeric',
                     'usd_price'=>'required|numeric',
+                    'available_offers'=>['required',Rule::in(['none','pieces','percent'])],
                     'images.*'=>'required|mimes:jpeg,bmp,png,jpg',
 
                 ];
@@ -53,8 +55,8 @@ class ProductRequest extends FormRequest
                     'content_ar'=>'required',
                     'egp_price'=>'required|numeric',
                     'usd_price'=>'required|numeric',
+                    'available_offers'=>['required',Rule::in(['none','pieces','percent'])],
                     'images.*'=>'mimes:jpeg,bmp,png,jpg',
-
                 ];
             }
             case 'PATCH':

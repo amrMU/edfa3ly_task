@@ -16,9 +16,12 @@ class CreateProductPricesTable extends Migration
         Schema::create('product_prices', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_id')->nullable();
-            $table->foreign('product_id')->references('id')->on('products') ->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->string('currency')->nullable();
             $table->float('price')->nullable();
+            $table->float('tax')->nullable();
+            $table->float('tax_plus')->nullable();
+
             $table->timestamps();
         });
     }

@@ -8,6 +8,6 @@ class ProductPrice extends Model
 {
     protected $table = 'product_prices';
     protected $fillable = [
-        'product_id','currency','price'
+        'product_id','currency','price','tax','tax_plus'
     ];
 }

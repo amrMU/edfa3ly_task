@@ -21,6 +21,10 @@ class CreateProductsTable extends Migration
             $table->string('content_en')->nullable();
             $table->unsignedInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories') ->onDelete('cascade');
+            $table->enum('offers_type',['none','percent','pieces']);
+            $table->integer('paid_pieces')->default(0);
+            $table->integer('free_pieces')->default(0);
+            $table->integer('percent')->default(0);
             $table->timestamps();
         });
     }

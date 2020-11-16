@@ -1,14 +1,15 @@
 <?php
 namespace App\Helpers;
+use Request;
 
-class DoFire 
+class DoFire
 {
- 
+
 
     public static function MK_REPORT($data,$user_id,$process,$ip)
     {
         // dd($process);
-        $report = new \App\Report;      
+        $report = new \App\Report;
         $report->key = $data['key'];
         $report->text = $data['text'];
         $report->user_id = $user_id;
@@ -22,6 +23,15 @@ class DoFire
         // dd($report);
         $report->save();
     }
+
+    public static function getCurrentCurrency(){
+       $currency = Request::get('cur');
+       if(!isset($currency) || empty($currency)){
+           $currency = 'usd';
+       }
+       return $currency;
+    }
+
 }
 
 

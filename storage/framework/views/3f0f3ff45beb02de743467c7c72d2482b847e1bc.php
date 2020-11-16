@@ -7,7 +7,7 @@
         <div class="page-header page-header-default">
             <div class="page-header-content">
                 <div class="page-title">
-                    <h4><i class="icon-arrow-right6 position-left"></i> <span class="text-semibold"><?php echo app('translator')->getFromJson('home.home'); ?></span> - <?php echo app('translator')->getFromJson('home.dashboard'); ?></h4>
+                    <h4><i class="icon-arrow-right6 position-left"></i> <span class="text-semibold"><?php echo app('translator')->getFromJson('home.site'); ?> - <?php echo app('translator')->getFromJson('home.home'); ?></span> </h4>
                 </div>
 
                 <div class="heading-elements">
@@ -22,7 +22,7 @@
             <div class="breadcrumb-line">
                 <ul class="breadcrumb">
                     <li><a href="<?php echo e(URL::to('ar/admin/home')); ?>"><i class="icon-home2 position-left"></i> <?php echo app('translator')->getFromJson('home.home'); ?></a></li>
-                    <li class="active"> <?php echo app('translator')->getFromJson('home.dashboard'); ?></li>
+                    <li class="active"> <?php echo app('translator')->getFromJson('home.site'); ?></li>
                 </ul>
 
                 <ul class="breadcrumb-elements">
@@ -60,52 +60,57 @@
                     <!-- Marketing campaigns -->
                     <div class="panel panel-flat">
                         <div class="panel-heading">
-                            <h6 class="panel-title"><?php echo app('translator')->getFromJson('home.browsing_info'); ?></h6>
+                            <h6 class="panel-title"><?php echo app('translator')->getFromJson('home.products_list'); ?></h6>
                             <div class="heading-elements">
-                                <span class="label bg-success heading-text"> <?php echo app('translator')->getFromJson('home.active'); ?></span>
-
-                                <ul class="icons-list">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                           <li><a href="<?php echo e(URL::to('ar/admin/reports_browsing')); ?>"><i class="icon-copy"></i> <?php echo app('translator')->getFromJson('home.full_report'); ?></a></li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                         <!-- table reports -->
+
                         <div class="table-responsive">
+
                             <table class="table text-nowrap">
                                 <thead>
                                 <tr>
-                                    <th><?php echo app('translator')->getFromJson('home.user'); ?></th>
-                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.action'); ?></th>
+                                    <th><?php echo app('translator')->getFromJson('home.name'); ?></th>
+                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.price'); ?></th>
+                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.category'); ?></th>
+                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.offer'); ?></th>
                                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.since'); ?></th>
-                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.ip'); ?></th>
-                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.location'); ?></th>
+                                    <th class="col-md-2"><i class="icon-menu-open2"></i></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
+                                <?php if($products->count() > 0): ?>
+                                    <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <tr>
                                         <td>
                                             <div class="media-left">
-                                                <div class=""><a href="#" class="text-default text-semibold">sldv</a></div>
-                                               kul
+                                                <div class=""><a href="#" class="text-default text-semibold"><?php echo e(@$product->$name); ?></a></div>
                                             </div>
                                             <div class="media-left media-middle">
-                                                <a href="#"><img src="<?php echo e(asset('img/visitor.png')); ?>" class="img-circle img-xs" alt=""></a>
+                                                <a href="#">
+                                                    <img src="<?php echo e(asset('/uploads/images/products/50x50/'.$product->images->first()->image)); ?>" width="50" height="50" class="img-responsive img-circle img-xs" alt="<?php echo e(@$product->name); ?>">
+                                                </a>
                                             </div>
                                         </td>
-                                        <td><span class="label bg-blue">نص</span></td>
-                                        <td><span class="text-muted">منذ</span></td>
-                                        <td><span class="text-success-600"><i class="icon-stats-growth2 position-left"></i>192</span></td>
-                                        <td><h6 class="text-semibold">القاهره</h6></td>
-
+                                        <td><span class="text-muted"><?php echo e(@$product->price . ' ' . trans('home.'.$product->currency)); ?></span></td>
+                                        <td>
+                                            <span class="text-success-600">
+                                                <a href="<?php echo e(url(LaravelLocalization::getCurrentLocale()).'/category/'.str_replace(' ','_',$product->category->name_en).'/'.$product->category_id.'?cur='.\App\Helpers\DoFire::getCurrentCurrency()); ?>"><?php echo e(@$product->category->$name); ?></a>
+                                            </span>
+                                        </td>
+                                        <td>
+                                          <?php echo $__env->make('front.products.in_offer', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                                        </td>
+                                        <td><h6 class="text-semibold"><?php echo e(@Carbon\Carbon::parse($product->created_at)->diffForHumans()); ?></h6></td>
+                                        <td>
+                                            <?php echo $__env->make('front.products.actions_list', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                                        </td>
                                     </tr>
-
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                <?php else: ?>
+                                    <th colspan="8" class="text-center"> <?php echo app('translator')->getFromJson('home.empty_list'); ?> </th>
+                                <?php endif; ?>
                                 </tbody>
                             </table>
                         </div>

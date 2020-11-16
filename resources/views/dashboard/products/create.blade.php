@@ -116,7 +116,26 @@
                                                 <i class="icon-coin-dollar"></i>
                                             </div>
                                         </div>
+                                    </div>
 
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label col-lg-3">@lang('home.tax') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="egp_tax" class="form-control input-xlg" placeholder="14" value="{{Request::old('egp_tax')}}">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-percent"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label col-lg-3">@lang('home.total_tax') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="egp_total_tax" class="form-control input-xlg" placeholder="17" value="{{Request::old('egp_tax')}}">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-percent"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                     {{--    EgpPrice--}}
                                     {{--        usdPrice--}}
@@ -128,9 +147,89 @@
                                                 <i class="icon-coin-dollar"></i>
                                             </div>
                                         </div>
+                                    </div>
 
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label col-lg-3">@lang('home.tax') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="usd_tax" class="form-control input-xlg" placeholder="14" value="{{Request::old('egp_tax')}}">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-percent"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label col-lg-3">@lang('home.total_tax') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="usd_total_tax" class="form-control input-xlg" placeholder="17" value="{{Request::old('egp_tax')}}">
+                                            <div class="form-control-feedback">
+                                                <i class="icon-percent"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 {{--    usdPrice--}}
+                                <legend class="text-bold">@lang('home.notes')</legend>
+                                    <h2 class="label @if(LaravelLocalization::getCurrentLocale() == 'en') border-right-grey @else border-left-grey @endif label-warning ">Important</h2> <br>
+                                    <h4 class="label  @if(LaravelLocalization::getCurrentLocale() == 'en') border-right-grey @else border-left-grey @endif label-striped">1- Offers none just select none</h4> <br>
+                                    <h4 class="label  @if(LaravelLocalization::getCurrentLocale() == 'en') border-right-grey @else border-left-grey @endif label-striped">2- Offers Pieces Ex sell 2 Opposite 1 Free  </h4> <br>
+                                    <h4 class="label  @if(LaravelLocalization::getCurrentLocale() == 'en') border-right-grey @else border-left-grey @endif label-striped">3- Offers percent just write percent ex: 1 application will handel percent (%)  </h4> <br>
+
+                                    {{-- Offer--}}
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label col-lg-3">@lang('home.available_offers') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-sm-3">
+                                            <label for="available_offers">
+                                                <input type="radio" name="available_offers" class="available_offers"  value="pieces" >
+                                                @lang('home.pieces')
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label for="available_offers">
+                                                <input type="radio" name="available_offers" class="available_offers" value="percent" >
+                                                  @lang('home.percent')
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label for="available_offers">
+                                                <input type="radio" name="available_offers" class="available_offers" value="none" checked>
+                                                @lang('home.none')
+                                            </label>
+                                        </div>
+                                    </div>
+                                {{-- Offer--}}
+                                {{-- pieces Offer--}}
+                                    <div class="form-group has-feedback has-feedback-left pieces-offers">
+                                        <label class="control-label col-lg-3">@lang('home.pieces') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-4">
+
+                                            <input type="text" name="paid_pieces" class="form-control input-xlg" placeholder="2" value="{{Request::old('paid_pieces')}}">
+                                            <div class="form-control-feedback " >
+                                                @lang('home.count')
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                            <input type="text" name="free_pieces" class="form-control input-xlg" placeholder="1" value="{{Request::old('free_pieces')}}">
+                                            <div class="form-control-feedback " >
+                                                @lang('home.opposite')
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{-- pieces Offer--}}
+
+                                {{-- pieces Offer--}}
+                                    <div class="form-group has-feedback has-feedback-left percent-offers">
+                                        <label class="control-label col-lg-3">@lang('home.percent') <span class="text-danger" title="@lang('home.required')"> *</span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="percent" class="form-control input-xlg" placeholder="17" value="{{Request::old('percent')}}">
+                                            <div class="form-control-feedback">
+                                                <li class="icon-percent"></li>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                {{-- pieces Offer--}}
                                     <!-- Logo uploader -->
                                     <div class="form-group">
                                         <label class="control-label col-lg-3">@lang('home.images') <span class="text-danger" title="@lang('home.required')"> *</span></label>
@@ -179,7 +278,21 @@
 
 @section('jsCode')
     <script>
-
-
+    $('.pieces-offers').hide();
+    $('.percent-offers').hide();
+    $('.available_offers').click(function(){
+       current_offer  = $(this).val();
+       if (current_offer == 'pieces'){
+           $('.pieces-offers').show();
+           $('.percent-offers').hide();
+       }else if(current_offer == 'percent'){
+           $('.pieces-offers').hide();
+           $('.percent-offers').show();
+       }else{
+           $('.pieces-offers').hide();
+           $('.percent-offers').hide();
+       }
+    });
     </script>
 @stop
+

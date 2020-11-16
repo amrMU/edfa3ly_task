@@ -17,9 +17,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
+
         App::booted(function()
         {
-            
+
             if (\Schema::hasTable('settings')) {
                 $setting = Setting::first();
                 Config::set('app.name',@$setting->title_en);
@@ -37,7 +39,12 @@ class AppServiceProvider extends ServiceProvider
 
             }
 
-            if (Config::get('app.locale') == 'en'){
+            if(\Schema::hasTable('categories')) {
+                $categories = App\Category::orderBy('created_at','DESC')->get();
+                view()->share('categories',$categories);
+            }
+
+                if (Config::get('app.locale') == 'en'){
                 $title = 'title_en';
                 $content = 'content_en';
                 $Name= 'nameEn';
@@ -52,9 +59,9 @@ class AppServiceProvider extends ServiceProvider
             view()->share('content', $content);
             view()->share('Name', $Name);
             view()->share('name', $name);
-    
-            
-            
+
+
+
         });
     }
 

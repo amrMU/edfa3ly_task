@@ -139,9 +139,32 @@
         'create_products'=>'Create New Product',
         'category'=>'Category',
         'prices'=>'Prices',
+        'price'=>'Prices',
         'images'=>'Images',
         'egp_price'=>'Egp Price',
-        'usd_price'=>'USD Price'
+        'usd_price'=>'USD Price',
+        'l.e'=>'L.E',
+        'usd'=>'USD',
+        'available_offers'=>'Available Offers',
+        'pieces'=>'Pieces',
+        'percent'=>'Percent',
+        'none'=>'none',
+        'opposite'=>'Opposite',
+        'count'=>'Count',
+        'tax'=>'tax',
+        'total_tax'=>'Total Tax',
+        'sell'=>'sell',
+        'and_get'=>'And Get',
+        'free'=>'Gift',
+        'discount'=>'Discount',
+        'offer'=>'Offer',
+        'actions'=>'actions',
+        'add_to_cart'=>'Add To Cart',
+        'show'=>'Show',
+
+
+
+
 
 
     ];
