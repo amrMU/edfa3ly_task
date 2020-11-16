@@ -7,7 +7,7 @@
 <!-- Modal -->
 <div id="open_cart<?php echo e(@$product->id); ?>" class="modal fade" role="dialog">
     <div class="modal-dialog">
-        <form action="<?php echo e(url(LaravelLocalization::getCurrentLocale()).'/add/cart'); ?>" method="post">
+        <form action="<?php echo e(url(LaravelLocalization::getCurrentLocale()).'/add/cart/'.$product->id); ?>" method="post">
             <?php echo csrf_field(); ?>
         <!-- Modal content-->
         <div class="modal-content">

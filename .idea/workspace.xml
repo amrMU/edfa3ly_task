@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/in_offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/in_offer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/7166c6e951a8e629fe8fb0184f1b111868fb14a5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7166c6e951a8e629fe8fb0184f1b111868fb14a5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6e0e6d67b39d76491903267a22666142f03624d2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6e0e6d67b39d76491903267a22666142f03624d2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e6957363151fbd26a39a5f5b44c29bfc97323a72.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e6957363151fbd26a39a5f5b44c29bfc97323a72.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,7 @@
       <workItem from="1605294407004" duration="42000" />
       <workItem from="1605356897677" duration="23225000" />
       <workItem from="1605425427836" duration="31483000" />
-      <workItem from="1605520213520" duration="5657000" />
+      <workItem from="1605520213520" duration="13711000" />
     </task>
     <servers />
   </component>

@@ -51,6 +51,11 @@
                             </li>
                         </ul>
                     </div>
+                    @if(Session::has('success'))
+                        <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a>{{ Session::get('success') }}
+                        </div>
+                    @endif
 
                     <div class="media-right media-middle text-nowrap">
                     @include('front.products.cart.add_to_cart_model')

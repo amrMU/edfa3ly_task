@@ -166,7 +166,8 @@
         'show'=>'عرض',
         'similar_products'=>'منتجات مشابهة',
         'get_offer'=>'احصل علي العرض',
-        'quantity'=>'الكمية'
+        'quantity'=>'الكمية',
+        'product_added_to_cart_successfully'=>'تمت إضافة المنتج إلى عربة التسوق بنجاح',
 
 
 

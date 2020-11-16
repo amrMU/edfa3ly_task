@@ -163,7 +163,8 @@
         'show'=>'Show',
         'similar_products'=>'Similar Products',
         'get_offer'=>'Get Offer',
-        'quantity'=>'Quantity'
+        'quantity'=>'Quantity',
+        'product_added_to_cart_successfully'=>'Product Added To Cart Successfully'
 
 
 

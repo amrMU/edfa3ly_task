@@ -51,6 +51,12 @@
                             </li>
                         </ul>
                     </div>
+                    <?php if(Session::has('success')): ?>
+                        <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a><?php echo e(Session::get('success')); ?>
+
+                        </div>
+                    <?php endif; ?>
 
                     <div class="media-right media-middle text-nowrap">
                     <?php echo $__env->make('front.products.cart.add_to_cart_model', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
