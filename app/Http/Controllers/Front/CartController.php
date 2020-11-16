@@ -16,6 +16,7 @@ class CartController extends Controller
 
     public function CartList(){
         $this->data['orders']  = Cart::where('user_id',Auth::id())->get();
+        $this->data['orders']  = Cart::where('user_id',Auth::id())->get();
         return view('front.orders.index',$this->data);
     }
 
@@ -60,7 +61,6 @@ class CartController extends Controller
            'currency' => $product->currency,
        ]);
        $total = $cart->total_price + $price * $request['quantity'];
-//       dd($total);
        $cart->update([
            'total_price'=>$cart->total_price + $price * $request['quantity'] ,
            'currency'=>$product->currency
@@ -76,4 +76,5 @@ class CartController extends Controller
            'percent' => $product->percent,
        ];
     }
+
 }

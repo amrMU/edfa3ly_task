@@ -419,7 +419,7 @@
 
                             <li class=" "><a href="<?php echo e(url(LaravelLocalization::getCurrentLocale().'/i/orders')); ?>"><i class="icon-list-ordered"></i> <span><?php echo app('translator')->getFromJson('home.orders_list'); ?></span></a></li>
 
-                           
+
 
                         </ul>
                     </div>

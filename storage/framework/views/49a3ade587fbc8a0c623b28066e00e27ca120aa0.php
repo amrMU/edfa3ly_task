@@ -51,10 +51,26 @@
                     <div class="panel panel-flat">
                         <div class="panel-heading">
                             <h6 class="panel-title"><?php echo app('translator')->getFromJson('home.orders_list'); ?></h6>
-                            <div class="heading-elements"></div>
+                            <div class="heading-elements">
+
+                            </div>
                         </div>
                         <!-- table reports -->
                         <div class="table-responsive">
+                            <?php if(Session::has('success')): ?>
+                                <div class="alert alert-success alert-dismissible">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a><?php echo e(Session::get('success')); ?>
+
+                                </div>
+                            <?php endif; ?>
+                            <?php if($errors->any()): ?>
+                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <div class="alert alert-danger alert-dismissible" >
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a><?php echo e($error); ?>
+
+                                    </div>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            <?php endif; ?>
                             <table class="table text-nowrap">
                                 <thead>
                                 <tr>
@@ -64,6 +80,7 @@
                                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.items'); ?></th>
                                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.total_price'); ?></th>
                                     <th class="col-md-2"><?php echo app('translator')->getFromJson('home.since'); ?></th>
+                                    <th class="col-md-2"><?php echo app('translator')->getFromJson('home.action'); ?></th>
                                    </tr>
                                 </thead>
                                 <tbody>
@@ -76,7 +93,13 @@
                                             <td><h6 class="text-success-600"><?php echo $__env->make('front.orders.items', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></h6></td>
                                             <td><h6 class="text-success-600"><?php echo e(@$order->total_price . ' ' . trans('home.'.$order->currency)); ?></h6></td>
                                             <td><h6 class="text-semibold"><?php echo e(@Carbon\Carbon::parse($order->created_at)->diffForHumans()); ?></h6></td>
-
+                                            <td>
+                                                <?php if($order->status == 'none'): ?>
+                                                <?php echo $__env->make('front.orders.checkout_model', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                                                <?php else: ?>
+                                                    --
+                                                <?php endif; ?>
+                                            </td>
                                         </tr>
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 <?php else: ?>

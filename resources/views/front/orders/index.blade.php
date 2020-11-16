@@ -52,10 +52,24 @@
                     <div class="panel panel-flat">
                         <div class="panel-heading">
                             <h6 class="panel-title">@lang('home.orders_list')</h6>
-                            <div class="heading-elements"></div>
+                            <div class="heading-elements">
+
+                            </div>
                         </div>
                         <!-- table reports -->
                         <div class="table-responsive">
+                            @if(Session::has('success'))
+                                <div class="alert alert-success alert-dismissible">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a>{{ Session::get('success') }}
+                                </div>
+                            @endif
+                            @if ($errors->any())
+                                @foreach ($errors->all() as $error)
+                                    <div class="alert alert-danger alert-dismissible" >
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close" style="right: 5px;">&times;</a>{{ $error }}
+                                    </div>
+                                @endforeach
+                            @endif
                             <table class="table text-nowrap">
                                 <thead>
                                 <tr>
@@ -65,6 +79,7 @@
                                     <th class="col-md-2">@lang('home.items')</th>
                                     <th class="col-md-2">@lang('home.total_price')</th>
                                     <th class="col-md-2">@lang('home.since')</th>
+                                    <th class="col-md-2">@lang('home.action')</th>
                                    </tr>
                                 </thead>
                                 <tbody>
@@ -77,7 +92,13 @@
                                             <td><h6 class="text-success-600">@include('front.orders.items')</h6></td>
                                             <td><h6 class="text-success-600">{{@$order->total_price . ' ' . trans('home.'.$order->currency)}}</h6></td>
                                             <td><h6 class="text-semibold">{{@Carbon\Carbon::parse($order->created_at)->diffForHumans()}}</h6></td>
-
+                                            <td>
+                                                @if($order->status == 'none')
+                                                @include('front.orders.checkout_model')
+                                                @else
+                                                    --
+                                                @endif
+                                            </td>
                                         </tr>
                                     @endforeach
                                 @else

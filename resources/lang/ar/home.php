@@ -177,6 +177,9 @@
         'in_progress'=>'في الطريق اليك',
         'accept'=>'تم القبول',
         'deliverd'=>'تم التسليم',
+        'order_complated_successfuly'=>'اكتمل الطلب بنجاح',
+        'complete_order'=>'اكتمال الطلب',
+
 
 
 

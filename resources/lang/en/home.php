@@ -174,6 +174,10 @@
         'in_progress'=>'On the way to you',
         'accept'=>'Accept',
         'deliverd'=>'Delivered',
+        'order_complated_successfuly'=>'order completed successfully',
+        'complete_order'=>'complete order',
+
+
 
 
 

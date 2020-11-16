@@ -59,6 +59,7 @@ Route::group(
         Route::group(['middleware' => 'auth'], function () {
             Route::get('i/orders','Front\CartController@CartList');
             Route::post('/add/cart/{product_id}','Front\CartController@addCartForm');
+            Route::post('/i/checkout/{cart_id}','Front\CheckOutController@complateOrder');
         });
     });
 

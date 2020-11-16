@@ -20,23 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/orders/items.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/cart/in_offer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/orders/checkout_model.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CartItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CartItems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CheckOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/orders/items.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders/items.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/721d130e2f7eb8a2a2756e0ea2383ee747acae30.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/721d130e2f7eb8a2a2756e0ea2383ee747acae30.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7dec199920eafbbcb0426d2c0d2c6695973185d1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7dec199920eafbbcb0426d2c0d2c6695973185d1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e6957363151fbd26a39a5f5b44c29bfc97323a72.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e6957363151fbd26a39a5f5b44c29bfc97323a72.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +225,7 @@
       <workItem from="1605294407004" duration="42000" />
       <workItem from="1605356897677" duration="23225000" />
       <workItem from="1605425427836" duration="31483000" />
-      <workItem from="1605520213520" duration="23447000" />
+      <workItem from="1605520213520" duration="26081000" />
     </task>
     <servers />
   </component>
@@ -258,10 +253,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="111" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1605294439397" />
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605553912073">
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605558553679">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605553912073" />
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605558553679" />
     <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605389492029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
