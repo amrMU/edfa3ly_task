@@ -161,6 +161,9 @@
         'actions'=>'actions',
         'add_to_cart'=>'Add To Cart',
         'show'=>'Show',
+        'similar_products'=>'Similar Products',
+        'get_offer'=>'Get Offer',
+        'quantity'=>'Quantity'
 
 
 

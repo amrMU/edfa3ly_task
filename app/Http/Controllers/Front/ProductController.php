@@ -8,8 +8,10 @@ use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
+    public $view = 'front.products.';
+
     public function show($name,$id){
         $this->data['product'] = Product::find($id);
-        return view('front.product.show',$this->data);
+        return view($this->view.'show',$this->data);
     }
 }

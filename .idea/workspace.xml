@@ -20,31 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/actions_list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/products/in_offer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/products/cart/add_to_cart_model.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/products/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/DoFire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/DoFire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/ProductRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ProductPrice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ProductPrice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laravellocalization.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_144019_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_144019_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_144643_create_product_prices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_144643_create_product_prices_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/in_offer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/in_offer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/3f0f3ff45beb02de743467c7c72d2482b847e1bc.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3f0f3ff45beb02de743467c7c72d2482b847e1bc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c77aa0c8107670b34f71070125b7d541e6e9b13d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c77aa0c8107670b34f71070125b7d541e6e9b13d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7166c6e951a8e629fe8fb0184f1b111868fb14a5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7166c6e951a8e629fe8fb0184f1b111868fb14a5.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,6 +222,7 @@
       <workItem from="1605294407004" duration="42000" />
       <workItem from="1605356897677" duration="23225000" />
       <workItem from="1605425427836" duration="31483000" />
+      <workItem from="1605520213520" duration="5657000" />
     </task>
     <servers />
   </component>
@@ -254,6 +239,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605455191467">
@@ -264,10 +250,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="111" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1605294439397" />
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605457165480">
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605524586297">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605457165480" />
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605524586297" />
     <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605389492029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

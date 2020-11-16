@@ -10,6 +10,6 @@
       @lang('home.sell')  {{@$product->paid_pieces}} @lang('home.and_get')  {{@$product->free_pieces}} @lang('home.free') 🔥 	🥳
     </h2> <br>
 @else
-
+    <br>
 
 @endif

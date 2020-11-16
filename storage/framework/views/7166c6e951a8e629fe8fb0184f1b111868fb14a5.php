@@ -10,6 +10,6 @@
       <?php echo app('translator')->getFromJson('home.sell'); ?>  <?php echo e(@$product->paid_pieces); ?> <?php echo app('translator')->getFromJson('home.and_get'); ?>  <?php echo e(@$product->free_pieces); ?> <?php echo app('translator')->getFromJson('home.free'); ?> 🔥 	🥳
     </h2> <br>
 <?php else: ?>
-
+    <br>
 
 <?php endif; ?>

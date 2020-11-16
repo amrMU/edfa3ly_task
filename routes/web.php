@@ -50,12 +50,13 @@ Route::group(
 
             Route::get('logout','Auth\LoginController@logout');
         });
+
+        Auth::routes();
+//Route::get('/','Auth\LoginController@showLoginForm');
+        Route::get('/','Front\HomeController@index');
+        Route::get('/category/{category_name}/{category_id}','Front\CategoryController@index');
+        Route::get('/product/{product_name}/{product_id}','Front\ProductController@show');
+
     });
 
 
-
-Auth::routes();
-//Route::get('/','Auth\LoginController@showLoginForm');
-Route::get('/','Front\HomeController@index');
-Route::get('/category/{category_name}/{category_id}','Front\CategoryController@index');
-Route::get('/product/{product_name}/{product_id}','Front\ProductController@show');
