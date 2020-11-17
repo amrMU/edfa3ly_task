@@ -20,18 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/orders/checkout_model.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/actions.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/items.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CheckOutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingProgressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingProgressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_25_182920_create_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_25_182920_create_reports_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_204310_create_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_204310_create_settings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_204706_create_setting_emails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_204706_create_setting_emails_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205052_create_setting_social_media_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205052_create_setting_social_media_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205249_create_setting_phones_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205249_create_setting_phones_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205424_create_setting_watsapps_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205424_create_setting_watsapps_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205753_create_setting_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205753_create_setting_addresses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_210537_create_setting_mail_provider_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_210537_create_setting_mail_provider_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_08_195022_create_external_resources_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_08_195022_create_external_resources_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/orders/items.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders/items.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/products/actions_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/actions_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/7dec199920eafbbcb0426d2c0d2c6695973185d1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7dec199920eafbbcb0426d2c0d2c6695973185d1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9685a8bd1ee9456b5d4d555fcc73dbb0b4f245e0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7863bd406951930c0c882690a649fff3c98037eb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7863bd406951930c0c882690a649fff3c98037eb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fade1945850657bde35b78891f1b923ec0f2f4e9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fade1945850657bde35b78891f1b923ec0f2f4e9.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/orders" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,6 +214,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amrmu\code\l-cart\resources\views\dashboard\orders" />
       <recent name="C:\Users\amrmu\code\l-cart\resources\views\front" />
       <recent name="C:\Users\amrmu\code\l-cart\resources\views\dashboard\products" />
       <recent name="C:\Users\amrmu\code\l-cart\resources\views\dashboard" />
@@ -225,7 +238,8 @@
       <workItem from="1605294407004" duration="42000" />
       <workItem from="1605356897677" duration="23225000" />
       <workItem from="1605425427836" duration="31483000" />
-      <workItem from="1605520213520" duration="26081000" />
+      <workItem from="1605520213520" duration="26806000" />
+      <workItem from="1605605123506" duration="7363000" />
     </task>
     <servers />
   </component>
@@ -253,10 +267,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="111" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1605294439397" />
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605558553679">
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1605608315708">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605558553679" />
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1605608315708" />
     <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605389492029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -265,9 +279,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1605389616025" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1605388914487">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1605613262833">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1605388914487" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1605613262833" />
   </component>
 </project>

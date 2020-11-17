@@ -179,6 +179,8 @@
         'deliverd'=>'تم التسليم',
         'order_complated_successfuly'=>'اكتمل الطلب بنجاح',
         'complete_order'=>'اكتمال الطلب',
+        'reject'=>'تم الرفض',
+        'orders'=>'الطلبات '
 
 
 

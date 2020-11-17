@@ -176,6 +176,10 @@
         'deliverd'=>'Delivered',
         'order_complated_successfuly'=>'order completed successfully',
         'complete_order'=>'complete order',
+        'reject'=>'Reject',
+        'orders'=>'Orders'
+
+
 
 
 

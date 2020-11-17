@@ -18,12 +18,12 @@ class CreateSettingsTable extends Migration
             $table->increments('id');
             $table->string('title_ar')->nullable();
             $table->string('title_en')->nullable();
-            $table->longText('content_ar');
-            $table->longText('content_en');
+            $table->longText('content_ar')->nullable();
+            $table->longText('content_en')->nullable();
             $table->string('logo')->nullable();
             $table->text('meta_tags')->nullable();
             $table->string('extirnal_code')->nullable();
-            $table->unsignedBigInteger('created_by');
+            $table->unsignedBigInteger('created_by')->nullable();
             $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();

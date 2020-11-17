@@ -15,7 +15,7 @@ class CreateSettingSocialMediaTable extends Migration
     {
         Schema::create('setting_social_media', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('setting_id');
+            $table->unsignedInteger('setting_id')->nullable();
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
             $table->string('name_ar')->nullable();
             $table->string('name_en')->nullable();

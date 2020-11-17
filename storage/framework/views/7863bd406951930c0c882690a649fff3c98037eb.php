@@ -424,11 +424,17 @@
 									</ul>
                             </li>
                             <li class="">
-									<a href="#" class="has-ul "><i class="icon-archive"></i> <span><?php echo app('translator')->getFromJson('home.products'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
-									<ul class="hidden-ul" style="display: none;">
-                                        <li><a href="<?php echo e(URL::to('ar/admin/products')); ?>" class=""><?php echo app('translator')->getFromJson('home.products_list'); ?></a></li>
-                                        <li><a href="<?php echo e(URL::to('ar/admin/products/create')); ?>" class=""><?php echo app('translator')->getFromJson('home.create_products'); ?></a></li>
-									</ul>
+                                <a href="#" class="has-ul "><i class="icon-price-tags"></i> <span><?php echo app('translator')->getFromJson('home.products'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
+                                <ul class="hidden-ul" style="display: none;">
+                                    <li><a href="<?php echo e(URL::to('ar/admin/products')); ?>" class=""><?php echo app('translator')->getFromJson('home.products_list'); ?></a></li>
+                                    <li><a href="<?php echo e(URL::to('ar/admin/products/create')); ?>" class=""><?php echo app('translator')->getFromJson('home.create_products'); ?></a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="has-ul "><i class="icon-cart"></i> <span><?php echo app('translator')->getFromJson('home.orders'); ?></span><span class="" style="left: 39.2308%; top: 63.6364%; transform: translate3d(-50%, -50%, 0px); transition-duration: 0.2s, 0.5s; width: 202.844%;"></span></a>
+                                <ul class="hidden-ul" style="display: none;">
+                                    <li><a href="<?php echo e(URL::to('ar/admin/orders')); ?>" class=""><?php echo app('translator')->getFromJson('home.orders'); ?></a></li>
+                                </ul>
                             </li>
 
 

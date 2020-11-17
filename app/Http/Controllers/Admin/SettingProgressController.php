@@ -44,6 +44,7 @@ class SettingProgressController extends Controller
 		//end upload file
 		SettingProgressController::external_resources($request,$model->first()->id);
 		SettingProgressController::store_mail_provider($request,$model->first()->id);
+
 		SettingProgressController::store_email($request,$model->first()->id);
 		SettingProgressController::store_phones($request,$model->first()->id);
 		SettingProgressController::store_whatsapp($request,$model->first()->id);
@@ -110,15 +111,18 @@ class SettingProgressController extends Controller
 	if (SettingMailProviderInfo::count() > 0 ) {
 		$delete_latest = SettingMailProviderInfo::where('setting_id',$setting_id)->forceDelete();
 	}
-	$insert_mail_info =	SettingMailProviderInfo::create([
-			 		'setting_id'=>$setting_id,
-				    'MAIL_DRIVER'=>$request['mail_driver'],
-				    'MAIL_HOST'=>$request['mail_host'],
-				    'MAIL_USERNAME'=>$request['mail_username'],
-				    'MAIL_PASSWORD'=>$request['mail_password'],
-				    'MAIL_port'=>$request['mail_port'],
-					]);
-		return $insert_mail_info;
+	if(isset($request['mail_driver']) || $request['mail_host'] ||$request['mail_username'] || $request['mail_password'] || $request['mail_port']){
+        $insert_mail_info =	SettingMailProviderInfo::create([
+            'setting_id'=>$setting_id,
+            'MAIL_DRIVER'=>$request['mail_driver'],
+            'MAIL_HOST'=>$request['mail_host'],
+            'MAIL_USERNAME'=>$request['mail_username'],
+            'MAIL_PASSWORD'=>$request['mail_password'],
+            'MAIL_port'=>$request['mail_port'],
+        ]);
+        return $insert_mail_info;
+    }
+
 	}
 
 

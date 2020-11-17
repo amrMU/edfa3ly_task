@@ -15,7 +15,7 @@ class CreateSettingPhonesTable extends Migration
     {
         Schema::create('setting_phones', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('setting_id');
+            $table->unsignedInteger('setting_id')->nullable();
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
             $table->string('phone')->nullable();
             $table->softDeletes();

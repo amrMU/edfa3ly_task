@@ -44,6 +44,11 @@ Route::group(
 
                 Route::resource('products','Admin\ProductsController');
                 Route::get('products/{id}/delete','Admin\ProductsController@destroy');
+                Route::get('orders','Admin\OrdersController@index');
+                Route::get('orders/in-progress/{id}','Admin\OrdersController@inProgressOrder');
+                Route::get('orders/accept/{id}','Admin\OrdersController@acceptOrder');
+                Route::get('orders/reject/{id}','Admin\OrdersController@rejectOrder');
+                Route::get('orders/deliverd/{id}','Admin\OrdersController@deliverdOrder');
 
             });
 

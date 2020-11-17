@@ -21,7 +21,7 @@ class CreateCartsTable extends Migration
             $table->string('currency')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->enum('status',['none','pending','in_progress','accept','deliverd']);
+            $table->enum('status',['none','pending','in_progress','accept','deliverd','reject']);
             $table->timestamps();
         });
     }

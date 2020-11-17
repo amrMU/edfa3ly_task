@@ -17,7 +17,7 @@ class CreateSettingEmailsTable extends Migration
             $table->increments('id');
             $table->string('email')->nullable();
             $table->string('department')->nullable();
-            $table->unsignedInteger('setting_id');
+            $table->unsignedInteger('setting_id')->nullable();
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();

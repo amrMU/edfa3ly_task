@@ -15,7 +15,7 @@ class CreateSettingAddressesTable extends Migration
     {
         Schema::create('setting_addresses', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('setting_id');
+            $table->unsignedInteger('setting_id')->nullable();
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
             $table->string('address_ar')->nullable();
             $table->string('address_en')->nullable();

@@ -15,9 +15,9 @@ class CreateReportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('key');
-            $table->string('text');
-            $table->longText('process');
+            $table->string('key')->nullable();
+            $table->string('text')->nullable();
+            $table->longText('process')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('ip')->nullable();
