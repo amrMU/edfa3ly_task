@@ -26,7 +26,7 @@
                               <td>@lang('home.total_tax')</td>
                               <td>@lang('home.price_one_piece')</td>
                               <td>@lang('home.quantity')</td>
-                              <td>@lang('hgiome.in_offer')</td>
+                              <td>@lang('home.in_offer')</td>
                               <td>@lang('home.offer')</td>
 
                           </tr>
