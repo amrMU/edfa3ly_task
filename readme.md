@@ -1,48 +1,96 @@
-## Limet Less - RTL
+## Edf3ly - Task
 
-Slim It's a Awesome Dashboard Has Most Component To Use In Your Application .. Modern & Clean Responsive Bootstrap 3.3.5 Admin Dashboard Template .. I'm using the bright color version
+Program that can price a cart of products, accept multiple products, combine offers, and display a total detailed bill in different currencies (based on user selection).
 
-## Why Build It?
-All Mobile Applications & Web Application Have Standard Or Base Informations .. I've Collected Data Shared In All This And Built It.
+#####Available catalog products and their price in USD:
 
-## components:
+>T-shirt $10.99 <br>
+>Pants $14.99 <br>
+>Jacket $19.99 <br>
+>Shoes $24.99 <br>
 
-##Site
+The program can handle some special offers, which affect the pricing.
 
-..* Comming Soon InterFace with Ar, En Languages  to receiving subscription user info
+####Available offers:
 
-##Control Panel
+1- Shoes are on 10% off. <br>
+2- Buy two t-shirts and get a jacket half its price. <br>
+3- The program accepts a list of products, outputs the detailed bill of the subtotal, tax, and discounts if applicable, bill can be displayed in various currencies.<br>
 
-#Languge support Ar, En
+<i>There is a 14% tax (before discounts) applied to all products. <i>
 
-..* Track all panel user what are you doing boot and save it to check all after if i have rule.
+E.g.:
 
-..* receiving subscription user info List with remove one or Export All as ExelSheet.
+#####Adding the following products:
+>T-shirt <br>
+>T-shirt <br>
+>Shoes <br>
+> Jacket <br>
+  
+#####Outputs the following bill, the user selected the USD bill:
+>Subtotal: $66.96 <br>
+>Taxes: $9.37 <br>
+>Discounts: <br>
+	>10% off shoes: -$2.499 <br>
+	>50% off jacket: -$9.995 <br>
+>Total: $63.8404 <br>   
 
-..* Authentication Model (Login - Logout - Forget password - Reset password).
+#####Another, e.g., If none of the offers are eligible, the user selected the EGP bill:
 
-..* Software Setting (general settings - SMTP BUILDER - DEPARTMENT EMAILS - COMPANY ADDRESSES - PHONES - WHATSAPP 				NUMBERS - SOCIAL MEDIA LINKS GENERATOR).
+>T-shirt <br>
+>Pants <br>
 
-..* Users CRUD to add anyuser if wnat, support export it out.
+######Outputs the following bill:
+>Subtotal: 409 e£ <br>
+>Taxes: 57 e£ <br>
+>Total: 467 e£ <br>
 
-..* Categories CRUD.
-
-..* Pages CRUD.
-
-..* Blogs CRUD .
+##setup guid
 
 
-#after git clone dont forget follow this steps
+####after git clone don't forget following this steps
 
-  1. run commend : sudo chmod -R 777 bootstrap/cache
-  2. run commend : sudo chmod -R 777 storage
-  3. run commend : sudo chmod -R 777 public/uploads
-  4. create database Name is "base_custom" or create database as you like and open main directory on project then .env file to set database name connection(DB_DATABASE,DB_USERNAME,DB_PASSWORD)
- defualt is a [
-		  'DB_DATABASE'=>'base_project' ,
-		  'DB_USERNAME'=>'root',
-		  'DB_PASSWORD'= ''
-  ]
- 5. Run commend : php artisan migrate --seed
 
-### can access dashboard using progict url/login try to use it and make a code review as you like  
+  4. create database Name is "X" or create database as you like
+   and open main directory on project then .env file to set database name connection(DB_DATABASE,DB_USERNAME,DB_PASSWORD)
+  [
+		  'DB_DATABASE'=>'x' ,
+		  'DB_USERNAME'=>'Y',
+		  'DB_PASSWORD'= 'P'
+  ] <br>
+ 5. Run commend : 
+ >php artisan migrate --seed 
+ 
+will create just admin user <br>
+ >amrmuhamed9@gmail.com <br>
+>12345678 <br>
+
+ ###### Or Import SQl File will get DataTest get data make test more easy
+>path: /database/db/l-cart.sql <br>
+
+####will find: 
+>categories , products , 2 user accounts [admin,user],city
+<br>
+
+Admin Account: 
+ >user : amrmuhamed9@gmail.com <br>
+>password : 12345678 <br>
+
+User Account:
+>user: amer@mail.com <br>
+>password: wcm5voes <br>
+
+
+##### can access dashboard using progict url/login try to use it and make a code review as you like
+ Ex Site urls:  <br>
+ http://l-cart.test = your domain
+ >http://l-cart.test <br>
+>http://l-cart.test/login #as admin ro user <br>
+
+#####Ex:sit url support currencies (deafualt currency = usd)from [l.e,usd]
+ > http://l-cart.test/ar?cur=l.e <br>
+> http://l-cart.test/ar?cur=usd <br>
+>http://l-cart.test/ar?cur=  <br>
+>Or  ######ex site url support localization [ar,en] <br>
+>http://l-cart.test/en <br>
+>http://l-cart.test/ar <br>

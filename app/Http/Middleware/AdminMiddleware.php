@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
 class AdminMiddleware
 {
@@ -15,7 +16,7 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && auth()->user()->type_user == 'admin') {
+        if (Auth::check() && Auth::user()->type_user == 'admin') {
 
             return $next($request);
 

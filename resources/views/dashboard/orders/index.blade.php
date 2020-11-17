@@ -122,7 +122,7 @@
 
             <!-- Footer -->
             <div class="footer text-muted">
-                &copy; 2019. <a href="#">Dashboard Web App Developed By </a>  <a href="https://www.linkedin.com/in/amrmuhamed" target="_blank">Amr Muhamed</a>
+                &copy; 2020. <a href="#">Dashboard Web App Developed By </a>  <a href="https://amrmoh.com" target="_blank">Amr Muhamed</a>
             </div>
             <!-- /footer -->
 

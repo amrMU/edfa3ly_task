@@ -169,7 +169,7 @@
         'items'=>'Items',
         'total_price'=>'Total Price',
         'orders_list'=>'Orders List',
-        'none'=>'in_cart',
+        'in_cart'=>'in_cart',
         'pending'=>'pending',
         'in_progress'=>'On the way to you',
         'accept'=>'Accept',

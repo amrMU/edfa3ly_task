@@ -7,7 +7,7 @@
         <div class="page-header page-header-default">
             <div class="page-header-content">
                 <div class="page-title">
-                    <h4><i class="icon-arrow-right6 position-left"></i> <span class="text-semibold"><?php echo app('translator')->getFromJson('home.site'); ?> - <?php echo app('translator')->getFromJson('home.home'); ?></span> </h4>
+                    <h4><i class="icon-arrow-right6 position-left"></i> <span class="text-semibold"> <?php echo app('translator')->getFromJson('home.home'); ?></span> </h4>
                 </div>
 
                 <div class="heading-elements">
@@ -20,25 +20,8 @@
             </div>
 
             <div class="breadcrumb-line">
-                <ul class="breadcrumb">
-                    <li><a href="<?php echo e(URL::to('ar/admin/home')); ?>"><i class="icon-home2 position-left"></i> <?php echo app('translator')->getFromJson('home.home'); ?></a></li>
-                    <li class="active"> <?php echo app('translator')->getFromJson('home.site'); ?></li>
-                </ul>
 
-                <ul class="breadcrumb-elements">
-                    <!-- <li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-gear position-left"></i>
-                            <?php echo app('translator')->getFromJson('home.settings'); ?>
-                            <span class="caret"></span>
-                        </a>
 
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="<?php echo e(URL::to('ar/admin/setting')); ?>"><i class="icon-gear"></i><?php echo app('translator')->getFromJson('home.general_settings'); ?></a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </div>
         <!-- /page header -->
@@ -126,7 +109,7 @@
 
             <!-- Footer -->
             <div class="footer text-muted">
-                &copy; 2019. <a href="#">Dashboard Web App Developed By </a>  <a href="https://www.linkedin.com/in/amrmuhamed" target="_blank">Amr Muhamed</a>
+                &copy; 2020. <a href="#">Dashboard Web App Developed By </a>  <a href="https://amrmoh.com" target="_blank">Amr Muhamed</a>
             </div>
             <!-- /footer -->
 

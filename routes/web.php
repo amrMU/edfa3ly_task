@@ -22,7 +22,7 @@ Route::group(
 
         Route::group(['middleware' => 'auth'], function () {
 
-            Route::group(['prefix' => '/admin'], function () {
+            Route::group(['prefix' => '/admin','middleware'=>'admin'], function () {
                 // $set_local_ar =  LaravelLocalization::setLocale('ar') ;
 
                 Route::get('setting','Admin\SettingController@create');

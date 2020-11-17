@@ -20,30 +20,197 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e80f322-6c14-4df3-a1f2-a3b72e56041c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/items.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/categories/1605614948.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/categories/1605615100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/logos/L-Cart/96336817680.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x100/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/150x150/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x150/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/200x200/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/250x100/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x200/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/300x300/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/421x589/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x300/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/500x500/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/50x50/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/1605615866.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/1605616218.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/1605616808.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/1605617000.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/3211232442.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/3211234004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/images/products/org/4816848672.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/9a2617df2417327f72b436f1205de2ee4d09e0fe.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingProgressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingProgressController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_25_182920_create_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_25_182920_create_reports_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_204310_create_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_204310_create_settings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_204706_create_setting_emails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_204706_create_setting_emails_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205052_create_setting_social_media_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205052_create_setting_social_media_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205249_create_setting_phones_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205249_create_setting_phones_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205424_create_setting_watsapps_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205424_create_setting_watsapps_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_205753_create_setting_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_205753_create_setting_addresses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_03_210537_create_setting_mail_provider_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_03_210537_create_setting_mail_provider_infos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_08_195022_create_external_resources_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_08_195022_create_external_resources_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_16_121300_create_carts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db/base_project.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x100/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/150x150/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x150/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/200x200/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/250x100/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x200/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/300x300/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/421x589/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x300/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/500x500/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/50x50/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/1605427692.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/1605449886.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/1605450212.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/1605451273.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/3210855388.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/3210899774.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/products/org/4816283082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/products/actions_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/products/actions_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/orders/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/7863bd406951930c0c882690a649fff3c98037eb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/7863bd406951930c0c882690a649fff3c98037eb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/fade1945850657bde35b78891f1b923ec0f2f4e9.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fade1945850657bde35b78891f1b923ec0f2f4e9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0209aee30acccdbc7dcb443843073b56aed09e6d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0209aee30acccdbc7dcb443843073b56aed09e6d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3f0f3ff45beb02de743467c7c72d2482b847e1bc.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3f0f3ff45beb02de743467c7c72d2482b847e1bc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/49a3ade587fbc8a0c623b28066e00e27ca120aa0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e7750743999732b2c09523d1120a530be0e73dce.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e7750743999732b2c09523d1120a530be0e73dce.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +406,7 @@
       <workItem from="1605356897677" duration="23225000" />
       <workItem from="1605425427836" duration="31483000" />
       <workItem from="1605520213520" duration="26806000" />
-      <workItem from="1605605123506" duration="7363000" />
+      <workItem from="1605605123506" duration="12985000" />
     </task>
     <servers />
   </component>
@@ -279,6 +446,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1605389616025" />
+    <state x="390" y="90" width="585" height="558" key="find.popup" timestamp="1605617540384">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="390" y="90" width="585" height="558" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1605617540384" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1605613262833">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

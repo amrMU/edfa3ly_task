@@ -24,12 +24,12 @@ use Auth;
 class UsersController extends Controller
 {
     public $view = 'dashboard.users';
-    
+
     public function __construct(User $user)
 	{
 		$this->user = $user;
-    }	
-    
+    }
+
 
     public function ExportExelSheet(Request $request)
     {
@@ -74,12 +74,12 @@ class UsersController extends Controller
         DoFire::MK_REPORT($data,Auth::id(),null,$request->ipinfo);
 
         return view($this->view.'.create');
-        
+
     }
 
     public function store(UserRequest $request)
     {
-       
+
         $insert = User::create([
             'fname'=>$request->fname,
             'lname'=>$request->lname,
@@ -87,11 +87,12 @@ class UsersController extends Controller
             'password'=>bcrypt($request->password),
             'city_id'=>$request->city_id,
             'phone'=>$request->phone,
+            'status'=>'active'
             // 'image'=>$this->attributes['image']
           ]);
 
         if($request->hasFile('image')){
-            $file =$request->file('image'); 
+            $file =$request->file('image');
 			$time = time();
 			$ext = $file->getClientOriginalExtension();
 			$fullname = $time . '.' . $ext;
@@ -107,7 +108,7 @@ class UsersController extends Controller
 
 
         Session::flash('success',trans('home.message_success'));
-        return redirect()->back();        
+        return redirect()->back();
     }
 
     public function edit($id,Request $request)
@@ -119,7 +120,7 @@ class UsersController extends Controller
         DoFire::MK_REPORT($data,Auth::id(),$info,$request->ipinfo);
 
         return view($this->view.'.edit',compact('info'));
-        
+
     }
 
     public function show()
@@ -144,7 +145,7 @@ class UsersController extends Controller
         }
 
         if($request->hasFile('image')){
-            $file =$request->file('image'); 
+            $file =$request->file('image');
 			$time = time();
 			$ext = $file->getClientOriginalExtension();
 			$fullname = $time . '.' . $ext;
@@ -161,6 +162,6 @@ class UsersController extends Controller
         DoFire::MK_REPORT($data,Auth::id(),$data_track,$request->ipinfo);
 
         Session::flash('success',trans('home.message_success'));
-        return redirect()->back();  
+        return redirect()->back();
     }
 }

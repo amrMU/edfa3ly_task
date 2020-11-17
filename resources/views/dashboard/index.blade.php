@@ -1,6 +1,6 @@
 @extends('dashboard.layouts.main')
 @section('content')
-    
+
         <!-- Main content -->
         <div class="content-wrapper">
 
@@ -50,7 +50,7 @@
 
                 <!-- Main charts -->
                 <div class="row">
-                 {{-- 
+                 {{--
                     <div class="col-lg-7">
                         <!-- Traffic sources -->
                         <div class="panel panel-flat">
@@ -271,7 +271,7 @@
                                 <h6 class="panel-title">@lang('home.browsing_info')</h6>
                                 <div class="heading-elements">
                                     <span class="label bg-success heading-text">{{ $active_users->count() }} @lang('home.active')</span>
-                                 
+
                                     <ul class="icons-list">
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
@@ -291,7 +291,7 @@
                                 <table class="table text-nowrap">
                                     <thead>
                                     <tr>
-                                    <th>@lang('home.user')</th>                                        
+                                    <th>@lang('home.user')</th>
                                     <th class="col-md-2">@lang('home.action')</th>
                                     <th class="col-md-2">@lang('home.since')</th>
                                     <th class="col-md-2">@lang('home.ip')</th>
@@ -322,7 +322,7 @@
                                        <td><span class="text-muted">{{@Carbon\Carbon::parse($user->last_report()->created_at)->diffForHumans()}}</span></td>
                                        <td><span class="text-success-600"><i class="icon-stats-growth2 position-left"></i>{{ @$user->last_report()->ip }}</span></td>
                                        <td><h6 class="text-semibold">{{ @$user->last_report()->location }}</h6></td>
-                                                                                 
+
                                     </tr>
                                     @endforeach
                                     </tbody>
@@ -340,7 +340,7 @@
 
                 <!-- Footer -->
                 <div class="footer text-muted">
-                    &copy; 2019. <a href="#">Dashboard Web App Developed By </a>  <a href="https://www.linkedin.com/in/amrmuhamed" target="_blank">Amr Muhamed</a>
+                    &copy; 2020. <a href="#">Dashboard Web App Developed By </a>  <a href="https://amrmoh.com" target="_blank">Amr Muhamed</a>
                 </div>
                 <!-- /footer -->
 

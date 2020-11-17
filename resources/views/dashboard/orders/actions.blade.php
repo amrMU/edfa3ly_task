@@ -20,11 +20,13 @@
                     {{$order->status}}
 
                 </h2>
-            @else
+            @elseif($order->status == 'deliverd')
                 <h2 class="label @if(LaravelLocalization::getCurrentLocale() == 'en') border-right-grey @else border-left-grey @endif label-striped ">
                    {{$order->status}} 🔥 	🥳
 
                 </h2>
+            @else
+                @lang('home.in_cart')
             @endif
         </ul>
     </li>

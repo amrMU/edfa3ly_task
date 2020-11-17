@@ -21,11 +21,13 @@
 
 
                 </h2>
-            <?php else: ?>
+            <?php elseif($order->status == 'deliverd'): ?>
                 <h2 class="label <?php if(LaravelLocalization::getCurrentLocale() == 'en'): ?> border-right-grey <?php else: ?> border-left-grey <?php endif; ?> label-striped ">
                    <?php echo e($order->status); ?> 🔥 	🥳
 
                 </h2>
+            <?php else: ?>
+                <?php echo app('translator')->getFromJson('home.in_cart'); ?>
             <?php endif; ?>
         </ul>
     </li>
