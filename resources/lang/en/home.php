@@ -177,7 +177,9 @@
         'order_complated_successfuly'=>'order completed successfully',
         'complete_order'=>'complete order',
         'reject'=>'Reject',
-        'orders'=>'Orders'
+        'orders'=>'Orders',
+        'price_one_piece'=>'Price One Piece',
+
 
 
 

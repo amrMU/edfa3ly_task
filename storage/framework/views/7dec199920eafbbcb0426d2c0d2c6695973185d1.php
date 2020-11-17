@@ -22,7 +22,9 @@
                       <tbod>
                           <tr>
                               <td><?php echo app('translator')->getFromJson('home.name'); ?></td>
-                              <td><?php echo app('translator')->getFromJson('home.price'); ?></td>
+                              <td><?php echo app('translator')->getFromJson('home.tax'); ?></td>
+                              <td><?php echo app('translator')->getFromJson('home.total_tax'); ?></td>
+                              <td><?php echo app('translator')->getFromJson('home.price_one_piece'); ?></td>
                               <td><?php echo app('translator')->getFromJson('home.quantity'); ?></td>
                               <td><?php echo app('translator')->getFromJson('home.in_offer'); ?></td>
                               <td><?php echo app('translator')->getFromJson('home.offer'); ?></td>
@@ -32,6 +34,20 @@
 
                               <tr>
                                   <th><?php echo e(@$item->product->$name); ?></th>
+                                  <th>
+                                      <?php
+                                      $tax = $item->product->price * $item->product->tax / 100;
+                                      ?>
+                                      <?php echo e(@$tax.trans('home.'.$item->currency)); ?>
+
+                                  </th>
+                                  <th>
+                                      <?php
+                                          $tax_plus = $item->product->price * $item->product->tax_plus / 100;
+                                      ?>
+                                      <?php echo e(@$tax_plus.trans('home.'.$item->currency)); ?>
+
+                                  </th>
                                   <th>
                                       <?php if($item->offers_type == 'percent'): ?>
 
@@ -49,6 +65,7 @@
                                       <?php endif; ?>
 
                                   </th>
+
                                   <th><?php echo e(@$item->quantity); ?></th>
                                   <th><?php echo e(@$item->offers_type); ?></th>
                                   <th>

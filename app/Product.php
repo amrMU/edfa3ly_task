@@ -11,7 +11,7 @@ class Product extends Model
         'name_ar','name_en','content_ar','content_en','category_id',
         'offers_type','paid_pieces','free_pieces','percent'
     ];
-    protected  $appends = ['price','currency'];
+    protected  $appends = ['price','currency','tax','tax_plus'];
 
     public function getPriceAttribute()
     {
@@ -34,6 +34,29 @@ class Product extends Model
         }else{
             $query = $this->prices->where('currency', 'usd')->first()->currency;
         }
+        return @$query ;
+    }
+
+    public function getTaxAttribute()
+    {
+        $currency = Request::get('cur');
+        if(isset($currency)  && !empty($currency)) {
+            $query = $this->prices->where('currency',$currency)->first()->tax;
+        }else{
+            $query = $this->prices->where('currency', 'usd')->first()->tax;
+        }
+
+        return @$query ;
+    }
+    public function getTaxPlusAttribute()
+    {
+        $currency = Request::get('cur');
+        if(isset($currency)  && !empty($currency)) {
+            $query = $this->prices->where('currency',$currency)->first()->tax_plus;
+        }else{
+            $query = $this->prices->where('currency', 'usd')->first()->tax_plus;
+        }
+
         return @$query ;
     }
 

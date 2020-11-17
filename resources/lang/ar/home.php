@@ -180,7 +180,8 @@
         'order_complated_successfuly'=>'اكتمل الطلب بنجاح',
         'complete_order'=>'اكتمال الطلب',
         'reject'=>'تم الرفض',
-        'orders'=>'الطلبات '
+        'orders'=>'الطلبات ',
+        'price_one_piece'=>'السعر لكل قطعه',
 
 
 

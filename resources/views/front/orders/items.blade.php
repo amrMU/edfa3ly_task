@@ -22,7 +22,9 @@
                       <tbod>
                           <tr>
                               <td>@lang('home.name')</td>
-                              <td>@lang('home.price')</td>
+                              <td>@lang('home.tax')</td>
+                              <td>@lang('home.total_tax')</td>
+                              <td>@lang('home.price_one_piece')</td>
                               <td>@lang('home.quantity')</td>
                               <td>@lang('home.in_offer')</td>
                               <td>@lang('home.offer')</td>
@@ -32,6 +34,18 @@
 
                               <tr>
                                   <th>{{@$item->product->$name}}</th>
+                                  <th>
+                                      @php
+                                      $tax = $item->product->price * $item->product->tax / 100;
+                                      @endphp
+                                      {{@$tax.trans('home.'.$item->currency)}}
+                                  </th>
+                                  <th>
+                                      @php
+                                          $tax_plus = $item->product->price * $item->product->tax_plus / 100;
+                                      @endphp
+                                      {{@$tax_plus.trans('home.'.$item->currency)}}
+                                  </th>
                                   <th>
                                       @if($item->offers_type == 'percent')
 
@@ -47,6 +61,7 @@
                                       @endif
 
                                   </th>
+
                                   <th>{{@$item->quantity}}</th>
                                   <th>{{@$item->offers_type}}</th>
                                   <th>
